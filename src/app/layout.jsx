@@ -29,17 +29,6 @@ export const metadata = {
   alternates: {
     canonical: '/',
   },
-  verification: {
-    // TODO: Add Google Search Console verification code
-    google: 'YOUR_GOOGLE_VERIFICATION_CODE',
-    // TODO: Add Bing verification code
-    yandex: 'yandex',
-    yahoo: 'yahoo',
-    other: {
-      me: ['rishimehndiartist@gmail.com', WEBSITE_URL],
-      'msvalidate.01': 'YOUR_BING_VERIFICATION_CODE',
-    },
-  },
   openGraph: {
     title: 'Rishi Mehndi Art | Best Bridal Mehndi Artist in Gurugram',
     description: 'Premium professional Mehndi artist in Gurugram. Specializing in luxury bridal, wedding, engagement, and Arabic Mehndi.',

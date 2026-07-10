@@ -4,8 +4,8 @@ export default function sitemap() {
 
   return [
     {
-      url: WEBSITE_URL,
-      lastModified: new Date(),
+      url: `${WEBSITE_URL}/`,
+      lastModified: '2026-07-10',
       changeFrequency: 'monthly',
       priority: 1,
     },
