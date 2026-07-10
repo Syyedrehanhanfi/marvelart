@@ -50,7 +50,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-brown-900/80 text-lg font-light max-w-md mb-10 text-balance leading-relaxed"
           >
-            Gurugram's most distinguished Mehndi artist. We blend traditional motifs with modern elegance for your special celebrations.
+            Serving clients across Gurugram (Gurgaon) and Delhi NCR. We blend traditional motifs with modern elegance for your special celebrations.
           </motion.p>
 
           <motion.div

@@ -9,7 +9,7 @@ export const metadata = {
     default: 'Rishi Mehndi Art | Best Bridal Mehndi Artist in Gurugram',
     template: '%s | Rishi Mehndi Art'
   },
-  description: 'Premium professional Mehndi artist in Gurugram. Specializing in luxury bridal, wedding, engagement, and Arabic Mehndi. Home service available.',
+  description: 'Premium professional Mehndi artist serving Gurugram (Gurgaon) and Delhi NCR. Specializing in luxury bridal, wedding, engagement, and Arabic Mehndi. Home service available.',
   keywords: [
     'Bridal Mehndi Artist in Gurugram', 
     'Best Mehndi Artist in Gurugram', 
