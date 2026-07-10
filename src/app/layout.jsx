@@ -1,7 +1,7 @@
 import './globals.css';
 
 // TODO: Replace with actual Website URL
-const WEBSITE_URL = 'https://rishimehndi.shop';
+const WEBSITE_URL = 'https://www.rishimehndi.shop';
 
 export const metadata = {
   metadataBase: new URL(WEBSITE_URL),
