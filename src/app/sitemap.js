@@ -1,6 +1,5 @@
 export default function sitemap() {
-  // TODO: Replace with actual Website URL
-  const WEBSITE_URL = 'https://www.rishimehndi.shop';
+  const WEBSITE_URL = 'https://www.mehndimarvel.com';
 
   return [
     {

@@ -9,7 +9,7 @@ export default function RatingBanner() {
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-2xl font-serif mb-2">Top Rated Mehndi Artist</h3>
-          <p className="text-cream-200 font-light text-sm tracking-widest uppercase">in Gurugram & Delhi NCR</p>
+          <p className="text-cream-200 font-light text-sm tracking-widest uppercase">in Udaipur, Rajasthan</p>
         </div>
         
         <div className="flex flex-col items-center">

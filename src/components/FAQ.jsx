@@ -8,7 +8,7 @@ import AnimatedSection from './AnimatedSection';
 const faqs = [
   {
     question: "Do you provide home service for bridal mehndi?",
-    answer: "Yes, we provide luxury home services across Gurugram, Delhi NCR, and surrounding areas. Our team brings everything needed for a comfortable, salon-like experience at your venue."
+    answer: "Yes, we provide luxury home services across Udaipur, Rajasthan, and surrounding areas. Our team brings everything needed for a comfortable, salon-like experience at your venue."
   },
   {
     question: "Is your henna organic and safe for sensitive skin?",
@@ -21,6 +21,38 @@ const faqs = [
   {
     question: "Do you cater to guest mehndi as well?",
     answer: "Yes, we have a skilled team of artists capable of handling guest mehndi for events of any size, ensuring everyone receives beautiful designs efficiently."
+  },
+  {
+    question: "Can I customize my bridal mehndi design?",
+    answer: "Yes! We specialize in customized bridal mehndi. During our consultation, we can discuss incorporating specific motifs, portraits, wedding dates, or any elements that hold special meaning to you."
+  },
+  {
+    question: "How long does a bridal mehndi application take?",
+    answer: "The duration depends on the intricacy and coverage of the design. Typically, a full bridal mehndi (hands and feet) takes between 4 to 7 hours."
+  },
+  {
+    question: "How can I ensure a dark mehndi stain?",
+    answer: "We provide a premium aftercare kit and detailed instructions. Key tips include leaving the paste on for 8-12 hours, avoiding water for 24 hours, and applying the lemon-sugar sealant we provide."
+  },
+  {
+    question: "Are travel charges included in the bridal package?",
+    answer: "Travel within central Udaipur is usually included. For venues outside the city limits or destination weddings, reasonable travel and accommodation charges may apply."
+  },
+  {
+    question: "Do you take out-of-station or destination wedding bookings?",
+    answer: "Yes, we frequently travel for destination weddings across Rajasthan and India. Please contact us with your venue details for a customized quote."
+  },
+  {
+    question: "What is your booking and cancellation policy?",
+    answer: "A booking is confirmed with an advance deposit. Deposits are non-refundable but can be adjusted for a future date if the event is postponed (subject to availability)."
+  },
+  {
+    question: "Do you offer trial mehndi sessions?",
+    answer: "Yes, we offer paid trial sessions for brides who want to test the stain quality and design style before confirming their final booking."
+  },
+  {
+    question: "Can you replicate a design I found online?",
+    answer: "While we can use your reference pictures as inspiration, we prefer to add our own artistic touch to ensure your design is unique and tailored perfectly to your hands."
   }
 ];
 

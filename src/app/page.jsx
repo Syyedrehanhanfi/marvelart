@@ -1,15 +1,21 @@
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
+import Stats from '../components/Stats';
+import About from '../components/About';
 import RatingBanner from '../components/RatingBanner';
 import Services from '../components/Services';
-import Showcase from '../components/Showcase';
-import Gallery from '../components/Gallery';
-import Pricing from '../components/Pricing';
 import WhyChooseUs from '../components/WhyChooseUs';
+import Gallery from '../components/Gallery';
+import EventTypes from '../components/EventTypes';
+import Pricing from '../components/Pricing';
 import Testimonials from '../components/Testimonials';
+import ServiceAreas from '../components/ServiceAreas';
+import Trust from '../components/Trust';
+import FinalCTA from '../components/FinalCTA';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import FloatingActions from '../components/FloatingActions';
+import LuxuryDivider from '../components/LuxuryDivider';
 
 export default function Page() {
   return (
@@ -23,13 +29,26 @@ export default function Page() {
       <div className="relative z-10">
         <Navbar />
         <Hero />
+        <LuxuryDivider />
+        <Stats />
+        <LuxuryDivider />
+        <About />
+        <LuxuryDivider />
         <RatingBanner />
         <Services />
+        <LuxuryDivider />
         <WhyChooseUs />
+        <LuxuryDivider />
         <Gallery />
-        <Showcase />
+        <EventTypes />
+        <LuxuryDivider />
         <Pricing />
+        <LuxuryDivider />
         <Testimonials />
+        <ServiceAreas />
+        <LuxuryDivider />
+        <Trust />
+        <FinalCTA />
         <Contact />
         <Footer />
         <FloatingActions />

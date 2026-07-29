@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -17,46 +19,49 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Services', href: '#services' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Packages', href: '#pricing' },
-    { name: 'Reviews', href: '#reviews' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Gallery', href: '/#gallery' },
+    { name: 'Packages', href: '/#pricing' },
+    { name: 'Classes', href: '/classes' },
+    { name: 'FAQ', href: '/faq' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-500 ${
         scrolled 
-          ? 'py-3 bg-white/80 backdrop-blur-xl border-b border-gold-500/20 shadow-[0_4px_30px_rgba(0,0,0,0.05)]' 
-          : 'py-6 bg-transparent'
+          ? 'py-1 md:py-3 bg-white/80 backdrop-blur-xl border-b border-gold-500/20 shadow-[0_4px_30px_rgba(0,0,0,0.05)]' 
+          : 'py-2 md:py-6 bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-12 flex justify-between items-center">
         
         {/* Luxury Logo */}
-        <a href="#" className="flex items-center gap-3 group">
-          <div className="flex flex-col">
-            <span className="font-serif text-2xl md:text-3xl tracking-wide text-brown-900 font-bold group-hover:text-gold-600 transition-colors duration-300">RISHI</span>
-            <span className="text-[9px] md:text-[10px] tracking-[0.4em] uppercase text-gold-500 font-semibold mt-0.5">Mehndi Art</span>
+        <a href="/" className="flex items-center group -ml-1 md:ml-0 gap-3">
+          <div className="relative w-20 h-20 md:w-20 md:h-20 rounded-full bg-white shadow-[0_4px_15px_rgba(212,175,55,0.2)] border border-gold-500/20 overflow-hidden flex items-center justify-center shrink-0">
+            <Image src="/logo/logo.jpg" alt="Mehndi Marvel Logo" fill sizes="80px" className="object-cover rounded-full scale-[1.1]" priority />
+          </div>
+          <div className="flex flex-col justify-center">
+            <span className="text-[1.1rem] leading-tight sm:text-xl md:text-2xl font-serif text-brown-900 font-bold tracking-wide">Mehndi Marvel</span>
           </div>
         </a>
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-10">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
               href={link.href}
               className="relative text-xs font-semibold text-brown-900 uppercase tracking-widest group py-2"
             >
               {link.name}
               <span className="absolute bottom-0 left-1/2 w-0 h-[1.5px] bg-gold-500 -translate-x-1/2 transition-all duration-300 group-hover:w-full"></span>
-            </a>
+            </Link>
           ))}
           
           <a
-            href="https://wa.me/7668715610?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Mehndi%20appointment"
+            href="https://wa.me/8209719892?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Mehndi%20appointment"
             target="_blank"
             rel="noreferrer"
             className="px-6 py-2.5 border border-brown-900 text-brown-900 text-xs font-bold tracking-widest uppercase hover:bg-brown-900 hover:text-gold-500 transition-all duration-300 shadow-sm hover:shadow-md"
@@ -90,21 +95,21 @@ export default function Navbar() {
             
             <div className="flex flex-col items-center gap-6 z-10 w-full px-8 mt-10">
               {navLinks.map((link, idx) => (
-                <motion.a
-                  key={link.name}
-                  href={link.href}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 + idx * 0.1, duration: 0.5 }}
-                  onClick={() => setIsOpen(false)}
-                  className="text-3xl font-serif text-brown-900 hover:text-gold-500 transition-colors w-full text-center border-b border-brown-900/10 pb-4"
-                >
-                  {link.name}
-                </motion.a>
+                <Link key={link.name} href={link.href} passHref legacyBehavior>
+                  <motion.a
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 + idx * 0.1, duration: 0.5 }}
+                    onClick={() => setIsOpen(false)}
+                    className="text-3xl font-serif text-brown-900 hover:text-gold-500 transition-colors w-full text-center border-b border-brown-900/10 pb-4"
+                  >
+                    {link.name}
+                  </motion.a>
+                </Link>
               ))}
               
               <motion.a
-                href="https://wa.me/7668715610?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Mehndi%20appointment"
+                href="https://wa.me/8209719892?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Mehndi%20appointment"
                 target="_blank"
                 rel="noreferrer"
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -123,7 +128,7 @@ export default function Navbar() {
               transition={{ delay: 0.9 }}
               className="absolute bottom-10 z-10 text-center"
             >
-              <p className="text-[10px] uppercase tracking-widest text-brown-900/50">Gurugram's Premium Artist</p>
+              <p className="text-[10px] uppercase tracking-widest text-brown-900/50">Udaipur's Premium Artist</p>
             </motion.div>
           </motion.div>
         )}

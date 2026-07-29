@@ -1,102 +1,100 @@
 import './globals.css';
 
 // TODO: Replace with actual Website URL
-const WEBSITE_URL = 'https://www.rishimehndi.shop';
+const WEBSITE_URL = 'https://www.mehndimarvel.com';
 
 export const metadata = {
   metadataBase: new URL(WEBSITE_URL),
   title: {
-    default: 'Rishi Mehndi Art | Best Bridal Mehndi Artist in Gurugram',
-    template: '%s | Rishi Mehndi Art'
+    default: 'Mehndi Marvel | Best Bridal Mehndi Artist in Udaipur',
+    template: '%s | Mehndi Marvel'
   },
-  description: 'Premium professional Mehndi artist serving Gurugram (Gurgaon) and Delhi NCR. Specializing in luxury bridal, wedding, engagement, and Arabic Mehndi. Home service available.',
+  description: 'Premium professional Mehndi artist serving Udaipur, Rajasthan. Specializing in luxury bridal, wedding, engagement, and Arabic Mehndi. Home service available.',
   keywords: [
-    'Bridal Mehndi Artist in Gurugram', 
-    'Best Mehndi Artist in Gurugram', 
-    'Professional Mehndi Artist in Gurugram', 
-    'Wedding Mehndi Artist Gurugram', 
-    'Arabic Mehndi Artist Gurugram', 
-    'Mehndi Artist Near Me',
-    'Engagement Mehndi Artist Gurugram',
-    'Luxury Bridal Mehndi Gurugram',
-    'Rishi Mehndi Art',
-    'Mehndi Artist Haryana'
+    'Mehndi Artist Udaipur', 
+    'Bridal Mehndi Artist Udaipur', 
+    'Best Mehndi Artist Udaipur', 
+    'Arabic Mehndi Udaipur', 
+    'Wedding Mehndi Udaipur', 
+    'Mehndi Marvel',
+    'Monika Sharma Mehndi',
+    'Bridal Mehndi Rajasthan'
   ],
-  authors: [{ name: 'Rishi Mehndi Art', url: WEBSITE_URL }],
-  creator: 'Rishi Mehndi Art',
-  publisher: 'Rishi Mehndi Art',
+  authors: [{ name: 'Mehndi Marvel', url: WEBSITE_URL }],
+  creator: 'Mehndi Marvel',
+  publisher: 'Mehndi Marvel',
   manifest: '/manifest.json',
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Rishi Mehndi Art | Best Bridal Mehndi Artist in Gurugram',
-    description: 'Premium professional Mehndi artist in Gurugram. Specializing in luxury bridal, wedding, engagement, and Arabic Mehndi.',
+    title: 'Mehndi Marvel | Best Bridal Mehndi Artist in Udaipur',
+    description: 'Premium professional Mehndi artist in Udaipur. Specializing in luxury bridal, wedding, engagement, and Arabic Mehndi.',
     url: WEBSITE_URL,
-    siteName: 'Rishi Mehndi Art',
+    siteName: 'Mehndi Marvel',
     locale: 'en_IN',
     type: 'website',
     images: [
       {
-        url: '/hero-main.jpeg',
+        url: '/logo/logo.jpg',
         width: 1200,
         height: 630,
-        alt: 'Beautiful Bridal Mehndi Design by Rishi Mehndi Art in Gurugram',
+        alt: 'Beautiful Bridal Mehndi Design by Mehndi Marvel in Udaipur',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Rishi Mehndi Art | Best Bridal Mehndi Artist in Gurugram',
-    description: 'Premium professional Mehndi artist in Gurugram. Specializing in luxury bridal, wedding, engagement, and Arabic Mehndi.',
-    images: ['/hero-main.jpeg'],
+    title: 'Mehndi Marvel | Best Bridal Mehndi Artist in Udaipur',
+    description: 'Premium professional Mehndi artist in Udaipur. Specializing in luxury bridal, wedding, engagement, and Arabic Mehndi.',
+    images: ['/logo/logo.jpg'],
   },
   icons: {
-    icon: '/favicon.svg',
-    apple: '/favicon.svg',
+    icon: '/logo/logo.jpg',
+    apple: '/logo/logo.jpg',
   },
 };
 
 const localBusinessLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'Rishi Mehndi Art',
-  image: `${WEBSITE_URL}/hero-main.jpeg`,
+  name: 'Mehndi Marvel',
+  image: `${WEBSITE_URL}/logo/logo.jpg`,
   '@id': WEBSITE_URL,
   url: WEBSITE_URL,
-  telephone: '+917668715610',
-  email: 'rishimehndiartist@gmail.com',
+  telephone: '+918209719892',
+  email: 'mehndimarvelofficial@gmail.com',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Shop No. CG-72, Arcadia, South City II, Sector 49',
-    addressLocality: 'Gurugram',
-    addressRegion: 'Haryana',
-    postalCode: '122018',
+    streetAddress: '1st Floor, Agrawal Flex, 100 Feet Road, Mali Colony, Sector 3, Hiran Magri',
+    addressLocality: 'Udaipur',
+    addressRegion: 'Rajasthan',
+    postalCode: '313002',
     addressCountry: 'IN'
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 28.4116,
-    longitude: 77.0658
+    latitude: 24.571270,
+    longitude: 73.691544
   },
   priceRange: '₹₹',
-  description: 'Professional Bridal and Arabic Mehendi Artist based in Gurugram, Haryana. Home service available.',
+  description: 'Professional Bridal and Arabic Mehendi Artist based in Udaipur, Rajasthan. Home service available.',
 };
 
 const organizationLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Rishi Mehndi Art',
+  name: 'Mehndi Marvel',
   url: WEBSITE_URL,
-  logo: `${WEBSITE_URL}/favicon.svg`,
+  logo: `${WEBSITE_URL}/logo/logo.jpg`,
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+917668715610',
+    telephone: '+918209719892',
     contactType: 'customer service',
-    email: 'rishimehndiartist@gmail.com'
+    email: 'mehndimarvelofficial@gmail.com'
   },
   sameAs: [
-    'https://www.instagram.com/rishi_imehandi_art_/'
+    'https://www.instagram.com/mehndimarvel/'
   ]
 };
 

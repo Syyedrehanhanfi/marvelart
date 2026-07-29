@@ -5,16 +5,36 @@ import AnimatedSection from './AnimatedSection';
 export default function WhyChooseUs() {
   const features = [
     { 
-      title: '100% Organic Henna', 
-      desc: 'Made with natural henna and premium ingredients for a safe application and a rich, long-lasting color.' 
+      title: '100% Natural Mehndi', 
+      desc: 'Made with organic henna and premium ingredients for safe application and rich color.' 
     },
     { 
-      title: 'Custom Mehndi Designs', 
-      desc: 'Every design is created especially for you, combining beautiful details with your unique style.' 
+      title: 'Customized Designs', 
+      desc: 'Every design is created especially for you, combining beautiful details with your style.' 
+    },
+    { 
+      title: 'Bridal Specialists', 
+      desc: 'Expert bridal artists trained in intricate, traditional, and modern wedding patterns.' 
     },
     { 
       title: 'Home Service Available', 
-      desc: 'Enjoy professional mehndi services at the comfort of your home for a relaxed and hassle-free experience.' 
+      desc: 'Enjoy professional mehndi services at the comfort of your home or wedding venue.' 
+    },
+    { 
+      title: 'Long Lasting Color', 
+      desc: 'Our special aftercare techniques guarantee a deep, beautiful, and lasting stain.' 
+    },
+    { 
+      title: 'Hygienic Process', 
+      desc: 'We maintain strict hygiene protocols and use freshly prepared cones for every client.' 
+    },
+    { 
+      title: 'On-Time Service', 
+      desc: 'Punctuality is our priority. We value your wedding schedule and time.' 
+    },
+    { 
+      title: 'Personalized Consultation', 
+      desc: 'Detailed pre-booking consultation to discuss motifs, figures, and styling preferences.' 
     }
   ];
 
@@ -29,7 +49,7 @@ export default function WhyChooseUs() {
           <h2 className="text-gold-500 tracking-[0.3em] uppercase text-[10px] font-semibold">The Philosophy</h2>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-16 divide-y md:divide-y-0 md:divide-x divide-white/10 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 text-center">
           {features.map((item, idx) => (
             <AnimatedSection 
               key={item.title} 

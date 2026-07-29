@@ -28,7 +28,7 @@ const reviews = [
   {
     name: "Pooja Yadav",
     role: "Bride",
-    text: "Rishi is very talented and patient. The mehndi design was exactly as I imagined. I'm really happy with the service."
+    text: "Monika is very talented and patient. The mehndi design was exactly as I imagined. I'm really happy with the service."
   }
 ];
 
@@ -45,24 +45,33 @@ export default function Testimonials() {
   return (
     <section id="reviews" className="py-12 px-6 bg-cream-200">
       <div className="max-w-4xl mx-auto">
-        <AnimatedSection className="text-center mb-8">
-          <div className="flex justify-center mb-3">
+        <AnimatedSection className="text-center mb-12">
+          <div className="flex justify-center mb-4">
             <div className="w-8 h-[1px] bg-gold-500/50"></div>
           </div>
-          <h2 className="text-gold-500 tracking-[0.3em] uppercase text-[9px] font-medium mb-2">Kind Words</h2>
-          <p className="text-2xl md:text-3xl font-serif text-brown-900">Happy Clients</p>
+          <h2 className="text-gold-500 tracking-[0.3em] uppercase text-xs font-medium mb-3">Kind Words</h2>
+          <p className="text-3xl md:text-4xl font-serif text-brown-900">Happy Clients</p>
         </AnimatedSection>
 
-        <AnimatedSection className="relative h-[280px] sm:h-[220px] flex justify-center items-center">
+        <AnimatedSection className="relative min-h-[380px] sm:min-h-[320px] flex justify-center items-center">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="absolute w-full max-w-[500px] bg-white/60 backdrop-blur-md border border-brown-900/5 p-8 sm:p-10 rounded-[2rem] shadow-xl text-center flex flex-col items-center"
+              initial={{ opacity: 0, scale: 0.95, y: 10 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: -10 }}
+              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+              className="w-full max-w-[550px] bg-white p-8 sm:p-12 rounded-[2rem] shadow-[0_20px_50px_rgba(176,139,91,0.15)] border border-gold-500/20 text-center flex flex-col items-center relative overflow-hidden group"
             >
+              {/* Decorative Corner Elements */}
+              <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-gold-500/20 rounded-tl-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-gold-500/20 rounded-br-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+
+              {/* Gold Quote Icon */}
+              <svg className="w-8 h-8 text-gold-500/30 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+
               <div className="flex text-gold-500 mb-5 gap-1">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -70,16 +79,17 @@ export default function Testimonials() {
                   </svg>
                 ))}
               </div>
-              <p className="text-brown-900/80 font-light leading-relaxed text-sm italic mb-6">
+              
+              <p className="text-brown-900/80 font-serif text-lg leading-relaxed italic mb-6">
                 "{reviews[currentIndex].text}"
               </p>
               
               <div className="flex flex-col items-center">
-                <div className="w-8 h-8 rounded-full bg-brown-900/10 flex items-center justify-center text-brown-900 font-serif text-sm mb-2">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-gold-600 to-gold-500 flex items-center justify-center text-white font-serif text-lg mb-3 shadow-md">
                   {reviews[currentIndex].name.charAt(0)}
                 </div>
-                <p className="font-serif text-brown-900 text-base">{reviews[currentIndex].name}</p>
-                <p className="text-[9px] uppercase tracking-[0.2em] text-gold-600 mt-1">{reviews[currentIndex].role}</p>
+                <p className="font-serif text-brown-900 text-lg font-semibold">{reviews[currentIndex].name}</p>
+                <p className="text-[10px] uppercase tracking-[0.2em] text-gold-600 mt-1">{reviews[currentIndex].role}</p>
               </div>
             </motion.div>
           </AnimatePresence>

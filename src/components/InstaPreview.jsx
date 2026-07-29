@@ -17,9 +17,9 @@ export default function InstaPreview() {
       <div className="max-w-7xl mx-auto">
         <AnimatedSection className="text-center mb-12">
           <h2 className="text-gold-500 tracking-[0.3em] uppercase text-xs font-medium mb-4">Follow The Journey</h2>
-          <p className="text-4xl font-serif text-brown-900 mb-6">@rishi_imehandi_art_</p>
+          <p className="text-4xl font-serif text-brown-900 mb-6">@mehndimarvel</p>
           <a 
-            href="https://www.instagram.com/rishi_imehandi_art_" 
+            href="https://www.instagram.com/mehndimarvel/" 
             target="_blank" 
             rel="noreferrer"
             className="inline-block border border-brown-900 text-brown-900 px-8 py-3 text-sm tracking-widest uppercase hover:bg-brown-900 hover:text-white transition-colors duration-300"
@@ -31,7 +31,7 @@ export default function InstaPreview() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {posts.map((src, idx) => (
             <AnimatedSection key={idx} delay={idx * 0.1}>
-              <a href="https://www.instagram.com/rishi_imehandi_art_" target="_blank" rel="noreferrer" className="block relative group overflow-hidden aspect-square">
+              <a href="https://www.instagram.com/mehndimarvel/" target="_blank" rel="noreferrer" className="block relative group overflow-hidden aspect-square">
                 <Image 
                   src={src} 
                   alt={`Instagram Post ${idx + 1}`} 

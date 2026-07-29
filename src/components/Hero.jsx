@@ -24,7 +24,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
             className="flex items-center gap-4 mb-4"
           >
             <div className="w-12 h-[1px] bg-gold-500/80"></div>
@@ -37,81 +37,104 @@ export default function Hero() {
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.4 }}
+            transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
             className="text-brown-900 flex flex-col mb-6 drop-shadow-md"
           >
-            <span className="font-script text-7xl md:text-8xl lg:text-[100px] text-gold-500 leading-[0.8] mb-2 font-normal drop-shadow-sm">Rishi</span>
-            <span className="font-serif text-5xl md:text-6xl font-bold tracking-tight text-brown-900">Mehndi Art</span>
+            <span className="font-script text-7xl md:text-8xl lg:text-[100px] bg-gradient-to-r from-gold-600 via-[#D4AF37] to-gold-500 bg-clip-text text-transparent leading-[0.8] mb-2 font-normal drop-shadow-sm pb-2">Luxury</span>
+            <span className="font-serif text-3xl md:text-5xl font-bold tracking-tight text-brown-900">Bridal Mehndi Artist in Udaipur</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.6 }}
             className="text-brown-900/80 text-lg font-light max-w-md mb-10 text-balance leading-relaxed"
           >
-            Serving clients across Gurugram (Gurgaon) and Delhi NCR. We blend traditional motifs with modern elegance for your special celebrations.
+            Create unforgettable wedding memories with elegant bridal mehndi designs by Monika Sharma. From intricate bridal patterns to modern Arabic styles, Mehndi Marvel brings creativity, elegance, and perfection to every celebration.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto"
           >
             <a
-              href="https://wa.me/7668715610?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Mehndi%20appointment"
+              href="https://wa.me/8209719892?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Mehndi%20appointment"
               target="_blank"
               rel="noreferrer"
-              className="group relative w-full sm:w-auto px-10 py-4 bg-brown-900 text-cream-100 uppercase tracking-widest text-sm font-semibold overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 text-center"
+              className="group relative w-full sm:w-auto px-10 py-4 bg-brown-900 text-cream-100 uppercase tracking-widest text-sm font-semibold overflow-hidden shadow-[0_0_20px_rgba(176,139,91,0.2)] transition-all duration-700 hover:shadow-[0_0_30px_rgba(176,139,91,0.4)] hover:-translate-y-1 text-center border border-brown-900"
             >
-              <div className="absolute inset-0 bg-gold-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"></div>
-              <span className="relative z-10 group-hover:text-brown-900 transition-colors duration-500">Book Appointment</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-gold-600 to-gold-500 translate-y-[101%] group-hover:translate-y-0 transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]"></div>
+              <span className="relative z-10 group-hover:text-white transition-colors duration-700">Book Now</span>
             </a>
             <a href="#gallery"
-              className="w-full sm:w-auto px-10 py-4 border border-brown-900 text-brown-900 uppercase tracking-widest text-sm font-medium hover:bg-brown-900 hover:text-white transition-colors duration-300 text-center"
+              className="w-full sm:w-auto px-10 py-4 border border-brown-900 text-brown-900 uppercase tracking-widest text-sm font-medium hover:bg-brown-900 hover:text-white transition-colors duration-700 text-center"
             >
-              View Portfolio
+              View Gallery
             </a>
+          </motion.div>
+          
+          {/* Trust Badges */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 1.0 }}
+            className="mt-8 flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-3 w-full"
+          >
+            {[
+              { label: "500+ Happy Brides" },
+              { label: "100% Natural Mehndi" },
+              { label: "Luxury Bridal Specialist" },
+              { label: "Serving Udaipur" }
+            ].map((badge, idx) => (
+              <div key={idx} className="flex items-center gap-2 group">
+                <svg className="w-3.5 h-3.5 text-gold-500 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <path d="M20 6L9 17l-5-5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <span className="text-[10px] uppercase tracking-widest text-brown-900/70 font-semibold">{badge.label}</span>
+              </div>
+            ))}
           </motion.div>
         </div>
 
         {/* Image Layout */}
         <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          className="relative order-1 lg:order-2 flex justify-center lg:justify-end"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
+            className="relative order-1 lg:order-2 flex justify-center lg:justify-end group/hero-image"
         >
           {/* Main Arch Image */}
-          <div className="relative w-[85%] sm:w-[70%] lg:w-[85%] aspect-[3/4] max-w-md">
+          <div className="relative w-[85%] sm:w-[70%] lg:w-[85%] aspect-[3/4] max-w-md mt-6 lg:mt-0">
             {/* Outer Decorative Line */}
-            <div className="absolute -inset-4 border-2 border-gold-500/40 rounded-t-full rounded-b-2xl z-0"></div>
+            <div className="absolute -inset-4 border border-gold-500/40 rounded-t-full rounded-b-2xl z-0 transition-transform duration-1000 ease-out group-hover/hero-image:scale-105"></div>
+            <div className="absolute -inset-6 border border-gold-500/20 rounded-t-full rounded-b-[2rem] z-0 transition-transform duration-1000 ease-out delay-75 group-hover/hero-image:scale-[1.07]"></div>
             
-            <div className="relative w-full h-full rounded-t-full rounded-b-2xl overflow-hidden shadow-2xl z-10 border border-white">
+            <div className="relative w-full h-full rounded-t-full rounded-b-2xl overflow-hidden shadow-2xl z-10 border border-white/50 bg-white">
               <Image 
                 src="/hero-main.jpeg" 
                 alt="Beautiful Mehndi Design" 
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover transition-transform duration-1000 hover:scale-105"
+                className="object-cover transition-transform duration-[2000ms] ease-out group-hover/hero-image:scale-110 group-hover/hero-image:brightness-110"
                 priority
               />
             </div>
 
             {/* Floating Overlapping Circular Image */}
             <motion.div 
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 1, duration: 0.8 }}
-              className="absolute -bottom-6 -left-6 sm:-left-12 w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-cream-100 shadow-xl overflow-hidden z-20"
+              initial={{ opacity: 0, x: -20, rotate: -10 }}
+              animate={{ opacity: 1, x: 0, rotate: 0 }}
+              transition={{ delay: 1.2, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+              className="absolute -bottom-6 -left-6 sm:-left-12 w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-cream-100 shadow-[0_10px_40px_rgba(0,0,0,0.15)] overflow-hidden z-20 transition-transform duration-700 hover:scale-105"
             >
               <Image 
                 src="/hero-sub.jpeg" 
                 alt="Mehndi Detail" 
                 fill
                 sizes="160px"
-                className="object-cover"
+                className="object-cover bg-white"
               />
             </motion.div>
             
@@ -132,6 +155,7 @@ export default function Hero() {
               </div>
               <span className="text-[9px] uppercase tracking-widest text-brown-900/60 font-semibold">Top Rated</span>
             </motion.div>
+
           </div>
         </motion.div>
         
