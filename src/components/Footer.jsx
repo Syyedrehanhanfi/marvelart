@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
 
         <p className="text-cream-200/50 text-xs font-light tracking-wide">
-          &copy; {new Date().getFullYear()} Rishi Mehndi Art. All rights reserved.
+          &copy; {new Date().getFullYear()} Rishi Mehndi Art.
         </p>
       </div>
     </footer>
