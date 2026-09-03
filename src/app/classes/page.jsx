@@ -12,70 +12,69 @@ import LuxuryDivider from '../../components/LuxuryDivider';
 
 const curriculum = [
   {
-    level: "Beginner Module",
-    title: "Foundation & Basics",
+    level: "Beginner Level",
+    title: "Basic Mehndi",
     duration: "Week 1-2",
     icon: <BookOpen className="w-8 h-8 text-gold-500" />,
     features: [
-      "History and cultural significance of Mehndi",
-      "How to make perfect organic Henna paste",
-      "Cone making and cutting techniques",
-      "Basic elements: Lines, dots, drops, and swirls",
-      "Simple floral and leaf patterns",
-      "Pressure control and symmetry"
+      "Basic lines, dots, curves and shapes",
+      "Flowers and leaf designs",
+      "Cone making and handling",
+      "Henna paste basics",
+      "Pressure and design control",
+      "Simple mehndi patterns"
     ]
   },
   {
-    level: "Intermediate Module",
-    title: "Arabic & Contemporary",
+    level: "Intermediate Level",
+    title: "Arabic & Modern Mehndi",
     duration: "Week 3-4",
     icon: <Sparkles className="w-8 h-8 text-gold-500" />,
     features: [
-      "Advanced floral and vine compositions",
-      "Shading, filling, and reverse filling techniques",
-      "Mandala designs and geometric patterns",
-      "Indo-Arabic fusion styles",
-      "Spaced out contemporary designs",
-      "Creating depth and 3D effects"
+      "Arabic floral designs",
+      "Shading and filling",
+      "Mandala designs",
+      "Geometric patterns",
+      "Modern and Indo-Arabic designs",
+      "Creating detailed patterns"
     ]
   },
   {
-    level: "Advanced Module",
-    title: "Bridal & Figures",
+    level: "Advanced Level",
+    title: "Bridal Mehndi",
     duration: "Week 5-6",
     icon: <Crown className="w-8 h-8 text-gold-500" />,
     features: [
-      "Intricate traditional bridal layouts",
-      "Grid patterns, netting, and complex borders",
-      "Dulha-Dulhan (Bride & Groom) portraits",
-      "Peacocks, elephants, and traditional motifs",
-      "Symmetry matching for both hands",
-      "Stain enhancement and aftercare secrets"
+      "Detailed bridal designs",
+      "Traditional motifs and patterns",
+      "Bride & Groom designs",
+      "Peacock, elephant and floral designs",
+      "Matching both hands",
+      "Tips for better and darker mehndi color"
     ]
   }
 ];
 
 const features = [
-  { icon: <BookOpen className="w-6 h-6" />, title: "Comprehensive Syllabus", desc: "From holding a cone to drawing intricate bridal portraits, we cover it all." },
-  { icon: <Users className="w-6 h-6" />, title: "Personalized Attention", desc: "Small batch sizes to ensure strict 1-on-1 feedback and guidance." },
-  { icon: <Award className="w-6 h-6" />, title: "Certificate of Completion", desc: "Get officially certified by Mehndi Marvel Academy upon finishing." },
-  { icon: <Gift className="w-6 h-6" />, title: "Free Premium Kit", desc: "Includes organic powder, essential oils, practice sheets, and tools." }
+  { icon: <BookOpen className="w-6 h-6" />, title: "Complete Learning", desc: "Learn everything from basic lines and flowers to beautiful bridal designs." },
+  { icon: <Users className="w-6 h-6" />, title: "Personal Attention", desc: "Get guidance and feedback during your practice." },
+  { icon: <Award className="w-6 h-6" />, title: "Course Certificate", desc: "Receive a certificate after successfully completing the course." },
+  { icon: <Gift className="w-6 h-6" />, title: "Free Practice Kit", desc: "Get a mehndi practice kit to help you learn and practice." }
 ];
 
 const galleryCategories = ['All Work', 'Beginner', 'Bridal', 'Arabic', 'Traditional'];
 
 const studentGallery = [
-  { src: '/arbic/arbic1.jpeg', category: 'Arabic' },
-  { src: '/bridal.jpg', category: 'Bridal' },
-  { src: '/mordern/WhatsApp Image 2026-07-09 at 5.39.00 PM (1).jpeg', category: 'Traditional' },
-  { src: '/leg mehendi/WhatsApp Image 2026-07-09 at 5.38.34 PM.jpeg', category: 'Beginner' }
+  { src: '/gallary/WhatsApp Image 2026-09-03 at 5.04.22 PM (1).jpeg', category: 'Mehndi Art' },
+  { src: '/gallary/WhatsApp Image 2026-09-03 at 5.04.22 PM (2).jpeg', category: 'Mehndi Art' },
+  { src: '/gallary/WhatsApp Image 2026-09-03 at 5.04.23 PM (1).jpeg', category: 'Mehndi Art' }
 ];
 
 const faqs = [
-  { q: "Do I need prior drawing experience?", a: "Not at all! Our course is designed for absolute beginners. We start from the very basics of holding a cone." },
-  { q: "Is the practice material provided?", a: "Yes, you will receive a complimentary Mehndi Marvel Premium Kit on your first day which includes everything you need." },
-  { q: "Will I get a certificate?", a: "Yes, upon successful completion of the course and final assessment, you will receive a recognized certificate." },
-  { q: "Can I start taking my own bridal orders after this?", a: "Absolutely. Our advanced module specifically prepares you to handle professional bridal bookings confidently." }
+  { q: "Do I need any previous experience?", a: "No. Beginners are welcome." },
+  { q: "Is the practice material provided?", a: "Yes. A basic practice kit is included with the course." },
+  { q: "Will I get a certificate?", a: "Yes. You will receive a certificate after completing the course." },
+  { q: "Can I start taking bridal orders after the course?", a: "Yes. The course is designed to help you improve your skills and become confident enough to take your own orders." }
 ];
 
 export default function ClassesPage() {
@@ -112,14 +111,14 @@ export default function ClassesPage() {
               
               <AnimatedSection delay={0.1}>
                 <h1 className="text-5xl md:text-7xl font-serif font-bold text-brown-900 mb-6 leading-[1.1]">
-                  Master the Art of <br className="hidden md:block"/>
-                  <span className="bg-gradient-to-r from-gold-600 via-gold-500 to-brown-900 bg-clip-text text-transparent">Professional Mehndi</span>
+                  Learn <br className="hidden md:block"/>
+                  <span className="bg-gradient-to-r from-gold-600 via-gold-500 to-brown-900 bg-clip-text text-transparent">Professional Mehndi Art</span>
                 </h1>
               </AnimatedSection>
               
               <AnimatedSection delay={0.2}>
                 <p className="text-lg md:text-xl text-brown-900/80 font-light max-w-2xl mb-12 text-balance leading-relaxed">
-                  Join Udaipur's most premium Mehndi Academy. Turn your passion into a high-paying profession with our certified professional courses.
+                  Learn beautiful mehndi designs from basic to advanced levels with Mehndi Marvel Academy, Udaipur. Whether you are a beginner or want to improve your skills, our course will help you become a confident mehndi artist.
                 </p>
               </AnimatedSection>
               
@@ -138,16 +137,17 @@ export default function ClassesPage() {
               {/* Trust Badges */}
               <AnimatedSection delay={0.4} className="w-full max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 px-4">
                 {[
-                  { icon: <Award className="w-5 h-5" />, text: "Certificate Included" },
-                  { icon: <Gift className="w-5 h-5" />, text: "Free Mehndi Kit" },
-                  { icon: <HeartHandshake className="w-5 h-5" />, text: "Lifetime Support" },
-                  { icon: <Shield className="w-5 h-5" />, text: "Limited Seats" }
+                  { icon: <Award className="w-5 h-5" />, text: "Certificate Included", desc: "Get a certificate after completing the course." },
+                  { icon: <Gift className="w-5 h-5" />, text: "Free Mehndi Kit", desc: "Get a basic practice kit." },
+                  { icon: <HeartHandshake className="w-5 h-5" />, text: "Personal Guidance", desc: "Learn with feedback." },
+                  { icon: <Shield className="w-5 h-5" />, text: "Limited Seats", desc: "Seats are limited." }
                 ].map((badge, idx) => (
                   <div key={idx} className="flex flex-col items-center text-center gap-2">
                     <div className="w-10 h-10 rounded-full bg-white/60 border border-gold-500/30 flex items-center justify-center text-gold-600 shadow-sm">
                       {badge.icon}
                     </div>
                     <span className="text-[10px] sm:text-xs uppercase tracking-widest font-semibold text-brown-900/80">{badge.text}</span>
+                    <span className="text-[9px] text-brown-900/50 mt-1">{badge.desc}</span>
                   </div>
                 ))}
               </AnimatedSection>
@@ -160,8 +160,8 @@ export default function ClassesPage() {
           <section className="py-24 px-6 bg-white/40">
             <div className="max-w-7xl mx-auto">
               <AnimatedSection className="text-center mb-16">
-                <h2 className="text-gold-500 tracking-[0.4em] uppercase text-xs font-semibold mb-4">The Academy</h2>
-                <p className="text-4xl md:text-5xl font-serif font-bold text-brown-900">Why Choose Mehndi Marvel?</p>
+                <h2 className="text-gold-500 tracking-[0.4em] uppercase text-xs font-semibold mb-4">About Our Academy</h2>
+                <p className="text-4xl md:text-5xl font-serif font-bold text-brown-900">Why Learn With Mehndi Marvel?</p>
               </AnimatedSection>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -186,7 +186,7 @@ export default function ClassesPage() {
             <div className="max-w-5xl mx-auto">
               <AnimatedSection className="text-center mb-20">
                 <h2 className="text-gold-500 tracking-[0.4em] uppercase text-xs font-semibold mb-4">Course Structure</h2>
-                <p className="text-4xl md:text-5xl font-serif font-bold text-brown-900">Your Journey to Mastery</p>
+                <p className="text-4xl md:text-5xl font-serif font-bold text-brown-900">Course Structure</p>
               </AnimatedSection>
 
               <div className="relative">
@@ -254,11 +254,11 @@ export default function ClassesPage() {
               <AnimatedSection className="text-center mb-12">
                 <div className="inline-block mb-6 px-5 py-2 rounded-full border border-gold-500/50 bg-gold-500/10 shadow-[0_0_15px_rgba(212,175,55,0.3)]">
                   <span className="text-xs uppercase tracking-widest text-gold-500 font-bold flex items-center gap-2">
-                    <Star className="w-3 h-3 fill-gold-500" /> Limited Time Offer <Star className="w-3 h-3 fill-gold-500" />
+                    <Star className="w-3 h-3 fill-gold-500" /> Special Offer <Star className="w-3 h-3 fill-gold-500" />
                   </span>
                 </div>
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">Invest in Your Future</h2>
-                <p className="text-cream-100/70 font-light text-lg max-w-2xl mx-auto">Get professional certification, lifetime support, and a complete premium starter kit at a massive discount.</p>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">Start Your Mehndi Journey Today</h2>
+                <p className="text-cream-100/70 font-light text-lg max-w-2xl mx-auto">Get the complete 6-week course with a free practice kit and personal guidance.</p>
               </AnimatedSection>
               
               <AnimatedSection delay={0.2}>
@@ -282,10 +282,10 @@ export default function ClassesPage() {
                   <div className="w-full md:w-1/2 z-10">
                     <ul className="space-y-5 text-left mb-10">
                       {[
-                        "Full 6-Week Certification Course", 
-                        "Premium Mehndi Practice Kit Included", 
-                        "1-on-1 Feedback & Doubt Sessions", 
-                        "Lifetime Community Support"
+                        "6-week complete course", 
+                        "Mehndi practice kit", 
+                        "Personal feedback and doubt sessions", 
+                        "Lifetime support"
                       ].map((item, i) => (
                         <li key={i} className="flex items-center gap-4 text-cream-100">
                           <CheckCircle2 className="w-6 h-6 text-gold-500 shrink-0" />
@@ -310,11 +310,16 @@ export default function ClassesPage() {
 
           {/* Student Success Counters */}
           <section className="py-20 bg-cream-100 border-b border-gold-500/20">
-            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="max-w-7xl mx-auto px-6">
+              <AnimatedSection className="text-center mb-16">
+                <h2 className="text-gold-500 tracking-[0.4em] uppercase text-xs font-semibold mb-4">Our Students</h2>
+                <p className="text-4xl md:text-5xl font-serif font-bold text-brown-900">Student Success</p>
+              </AnimatedSection>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { icon: <Briefcase />, count: "50+", text: "Started Own Business" },
+                { icon: <Briefcase />, count: "50+", text: "Started Their Own Business" },
                 { icon: <TrendingUp />, count: "120+", text: "Freelance Artists" },
-                { icon: <Crown />, count: "80+", text: "Bridal Booking Success" },
+                { icon: <Crown />, count: "80+", text: "Successful Bridal Bookings" },
                 { icon: <Star />, count: "200+", text: "Happy Students" }
               ].map((stat, idx) => (
                 <AnimatedSection key={idx} delay={idx * 0.1}>
@@ -328,31 +333,18 @@ export default function ClassesPage() {
                 </AnimatedSection>
               ))}
             </div>
+            </div>
           </section>
 
           {/* Student Work Gallery */}
           <section className="py-24 px-6 bg-white">
             <div className="max-w-7xl mx-auto">
               <AnimatedSection className="text-center mb-16">
-                <h2 className="text-gold-500 tracking-[0.4em] uppercase text-xs font-semibold mb-4">Proud Moments</h2>
+                <h2 className="text-gold-500 tracking-[0.4em] uppercase text-xs font-semibold mb-4">Student Artwork</h2>
                 <p className="text-4xl md:text-5xl font-serif font-bold text-brown-900 mb-10">Student Artwork</p>
+                <p className="text-brown-900/70 font-light mt-4 mb-8">See the beautiful mehndi designs created by our students.</p>
                 
-                {/* Category Filters */}
-                <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
-                  {galleryCategories.map((cat) => (
-                    <button
-                      key={cat}
-                      onClick={() => setActiveCategory(cat)}
-                      className={`text-[11px] sm:text-xs uppercase tracking-widest pb-2 border-b-2 transition-all duration-300 ${
-                        activeCategory === cat 
-                          ? 'border-gold-500 text-gold-600 font-bold' 
-                          : 'border-transparent text-brown-900/50 hover:text-brown-900'
-                      }`}
-                    >
-                      {cat}
-                    </button>
-                  ))}
-                </div>
+                {/* Category Filters removed */}
               </AnimatedSection>
               
               <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -392,7 +384,7 @@ export default function ClassesPage() {
           <section className="py-24 px-6 bg-cream-100">
             <div className="max-w-3xl mx-auto">
               <AnimatedSection className="text-center mb-16">
-                <h2 className="text-gold-500 tracking-[0.4em] uppercase text-xs font-semibold mb-4">Clarifications</h2>
+                <h2 className="text-gold-500 tracking-[0.4em] uppercase text-xs font-semibold mb-4">Frequently Asked Questions</h2>
                 <p className="text-4xl font-serif font-bold text-brown-900">Class FAQs</p>
               </AnimatedSection>
 
@@ -442,10 +434,10 @@ export default function ClassesPage() {
                 </div>
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-brown-900 mb-8 leading-tight">
                   Turn Your Passion Into <br/>
-                  <span className="bg-gradient-to-r from-gold-600 via-gold-500 to-brown-900 bg-clip-text text-transparent">Your Profession</span>
+                  <span className="bg-gradient-to-r from-gold-600 via-gold-500 to-brown-900 bg-clip-text text-transparent">a Skill</span>
                 </h2>
                 <p className="text-lg text-brown-900/70 font-light max-w-2xl mx-auto mb-12">
-                  Seats for our next batch are filling up fast. Take the first step towards a rewarding career as a professional Mehndi artist today.
+                  Learn mehndi, improve your skills, and start your journey as a professional mehndi artist.
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
                   <a 

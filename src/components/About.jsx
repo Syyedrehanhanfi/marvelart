@@ -15,13 +15,16 @@ export default function About() {
             <div className="w-12 h-[1px] bg-gold-500 mb-6 mx-auto md:mx-0"></div>
             <h2 className="text-gold-600 tracking-[0.4em] uppercase text-xs font-semibold mb-4">About Mehndi Marvel</h2>
             <p className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold leading-snug mb-6 text-balance drop-shadow-sm">
-              Crafting Your Special Moments With Precision & Artistry
+              Making Your Special Moments More Beautiful
             </p>
             <p className="text-brown-900/80 font-light text-lg leading-relaxed mb-6">
-              Mehndi Marvel, founded by Monika Sharma, is a premium professional mehndi studio based in Udaipur, Rajasthan. 
+              <strong>Mehndi Marvel</strong>, founded by <strong>Monika Sharma</strong>, is a professional mehndi studio based in <strong>Udaipur, Rajasthan</strong>. 
+            </p>
+            <p className="text-brown-900/80 font-light text-lg leading-relaxed mb-6">
+              We create beautiful <strong>bridal, engagement, Arabic, festive, and customized mehndi designs</strong>. Every design is carefully made with love and attention to detail using <strong>100% organic henna</strong>.
             </p>
             <p className="text-brown-900/80 font-light text-lg leading-relaxed mb-8">
-              We specialize in luxury bridal mehndi, engagement mehndi, Arabic designs, festive mehndi, and customized artistic patterns. Every single design is handcrafted with immense precision, using 100% organic henna, to make your special moments even more memorable and breathtaking.
+              Our goal is to make your special moments <strong>more beautiful, memorable, and unique</strong>.
             </p>
             <div className="w-12 h-[1px] bg-gold-500/50 mt-2 mx-auto md:mx-0"></div>
           </AnimatedSection>
@@ -45,7 +48,7 @@ export default function About() {
               {/* Overlay Label */}
               <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md px-6 py-3 rounded-lg shadow-xl border border-gold-500/20 text-center min-w-[180px] z-20">
                 <h3 className="font-serif text-brown-900 text-lg font-bold">Monika Sharma</h3>
-                <p className="text-gold-600 uppercase tracking-widest text-[9px] font-semibold mt-1">Founder & Artist</p>
+                <p className="text-gold-600 uppercase tracking-widest text-[9px] font-semibold mt-1">Founder & Mehndi Artist</p>
               </div>
             </div>
           </AnimatedSection>

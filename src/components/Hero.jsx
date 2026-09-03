@@ -113,7 +113,7 @@ export default function Hero() {
             
             <div className="relative w-full h-full rounded-t-full rounded-b-2xl overflow-hidden shadow-2xl z-10 border border-white/50 bg-white">
               <Image 
-                src="/hero-main.jpeg" 
+                src="/hero-main.avif" 
                 alt="Beautiful Mehndi Design" 
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

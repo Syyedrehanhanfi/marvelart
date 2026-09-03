@@ -5,36 +5,36 @@ import AnimatedSection from './AnimatedSection';
 export default function WhyChooseUs() {
   const features = [
     { 
-      title: '100% Natural Mehndi', 
-      desc: 'Made with organic henna and premium ingredients for safe application and rich color.' 
+      title: '🌿 100% Natural Mehndi', 
+      desc: 'We use natural henna and quality ingredients for a safe and beautiful mehndi experience.' 
     },
     { 
-      title: 'Customized Designs', 
-      desc: 'Every design is created especially for you, combining beautiful details with your style.' 
+      title: '✨ Custom Designs', 
+      desc: 'Choose a design that matches your style. We create each mehndi design specially for you.' 
     },
     { 
-      title: 'Bridal Specialists', 
-      desc: 'Expert bridal artists trained in intricate, traditional, and modern wedding patterns.' 
+      title: '👰 Bridal Mehndi Experts', 
+      desc: 'Beautiful traditional and modern bridal designs made with care and attention to detail.' 
     },
     { 
-      title: 'Home Service Available', 
-      desc: 'Enjoy professional mehndi services at the comfort of your home or wedding venue.' 
+      title: '🏠 Home Service', 
+      desc: 'Get professional mehndi service at your home or wedding venue.' 
     },
     { 
-      title: 'Long Lasting Color', 
-      desc: 'Our special aftercare techniques guarantee a deep, beautiful, and lasting stain.' 
+      title: '🤎 Beautiful & Long-Lasting Color', 
+      desc: 'We use proper mehndi and aftercare techniques to help you get a rich and lasting color.' 
     },
     { 
-      title: 'Hygienic Process', 
-      desc: 'We maintain strict hygiene protocols and use freshly prepared cones for every client.' 
+      title: '🧼 Clean & Hygienic', 
+      desc: 'Fresh mehndi cones are used for every client while maintaining proper hygiene.' 
     },
     { 
-      title: 'On-Time Service', 
-      desc: 'Punctuality is our priority. We value your wedding schedule and time.' 
+      title: '⏰ On-Time Service', 
+      desc: 'We respect your time and make sure your mehndi service fits smoothly into your schedule.' 
     },
     { 
-      title: 'Personalized Consultation', 
-      desc: 'Detailed pre-booking consultation to discuss motifs, figures, and styling preferences.' 
+      title: '💬 Easy Consultation', 
+      desc: "Tell us your ideas, preferred designs, and style. We'll help create the perfect mehndi look for you." 
     }
   ];
 
@@ -45,8 +45,8 @@ export default function WhyChooseUs() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <AnimatedSection className="text-center mb-12 flex flex-col items-center">
-          <div className="w-8 h-[1px] bg-gold-500/50 mb-4"></div>
-          <h2 className="text-gold-500 tracking-[0.3em] uppercase text-[10px] font-semibold">The Philosophy</h2>
+          <div className="w-12 h-[1px] bg-gold-500 mb-6"></div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-gold-500 drop-shadow-sm">Why Choose Mehndi Marvel?</h2>
         </AnimatedSection>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 text-center">

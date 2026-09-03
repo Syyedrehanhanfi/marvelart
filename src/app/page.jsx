@@ -6,6 +6,7 @@ import RatingBanner from '../components/RatingBanner';
 import Services from '../components/Services';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Gallery from '../components/Gallery';
+import VideoGallery from '../components/VideoGallery';
 import EventTypes from '../components/EventTypes';
 import Pricing from '../components/Pricing';
 import Testimonials from '../components/Testimonials';
@@ -40,6 +41,7 @@ export default function Page() {
         <WhyChooseUs />
         <LuxuryDivider />
         <Gallery />
+        <VideoGallery />
         <EventTypes />
         <LuxuryDivider />
         <Pricing />

@@ -8,45 +8,9 @@ import AnimatedSection from './AnimatedSection';
 const categories = ['All Designs', 'Bridal', 'Arabic', 'Modern', 'Foot Mehndi'];
 
 const images = [
-  { id: 1, src: '/bridal/bridal1.jpeg', category: 'Bridal' },
-  { id: 2, src: '/bridal/bridal2.jpeg', category: 'Bridal' },
-  { id: 3, src: '/bridal/bridal3.jpeg', category: 'Bridal' },
-  { id: 4, src: '/bridal/bridal4.jpeg', category: 'Bridal' },
-  { id: 5, src: '/bridal/bridal5.jpeg', category: 'Bridal' },
-  { id: 6, src: '/bridal/bridal6.jpeg', category: 'Bridal' },
-  { id: 7, src: '/bridal/bridal7.jpeg', category: 'Bridal' },
-  { id: 28, src: '/bridal/WhatsApp Image 2026-07-09 at 5.38.56 PM (1).jpeg', category: 'Bridal' },
-  { id: 8, src: '/arbic/arbic1.jpeg', category: 'Arabic' },
-  { id: 9, src: '/arbic/arbic2.jpeg', category: 'Arabic' },
-  { id: 10, src: '/arbic/arbic3.jpeg', category: 'Arabic' },
-  { id: 11, src: '/arbic/WhatsApp Image 2026-07-09 at 5.39.10 PM (1).jpeg', category: 'Arabic' },
-  { id: 12, src: '/arbic/WhatsApp Image 2026-07-09 at 5.39.12 PM.jpeg', category: 'Arabic' },
-  { id: 13, src: '/arbic/WhatsApp Image 2026-07-09 at 5.39.12 PM (1).jpeg', category: 'Arabic' },
-  { id: 14, src: '/arbic/WhatsApp Image 2026-07-09 at 5.39.12 PM (2).jpeg', category: 'Arabic' },
-  { id: 15, src: '/arbic/WhatsApp Image 2026-07-09 at 5.39.00 PM.jpeg', category: 'Arabic' },
-  { id: 16, src: '/arbic/WhatsApp Image 2026-07-09 at 5.39.03 PM.jpeg', category: 'Arabic' },
-  { id: 17, src: '/mordern/WhatsApp Image 2026-07-09 at 5.38.44 PM (1).jpeg', category: 'Modern' },
-  { id: 29, src: '/mordern/WhatsApp Image 2026-07-09 at 5.38.48 PM (1).jpeg', category: 'Modern' },
-  { id: 30, src: '/mordern/WhatsApp Image 2026-07-09 at 5.38.48 PM (2).jpeg', category: 'Modern' },
-  { id: 31, src: '/mordern/WhatsApp Image 2026-07-09 at 5.38.48 PM.jpeg', category: 'Modern' },
-  { id: 32, src: '/mordern/WhatsApp Image 2026-07-09 at 5.38.50 PM (1).jpeg', category: 'Modern' },
-  { id: 33, src: '/mordern/WhatsApp Image 2026-07-09 at 5.38.50 PM.jpeg', category: 'Modern' },
-  { id: 34, src: '/mordern/WhatsApp Image 2026-07-09 at 5.38.51 PM (2).jpeg', category: 'Modern' },
-  { id: 35, src: '/mordern/WhatsApp Image 2026-07-09 at 5.38.53 PM (1).jpeg', category: 'Modern' },
-  { id: 36, src: '/mordern/WhatsApp Image 2026-07-09 at 5.38.54 PM.jpeg', category: 'Modern' },
-  { id: 37, src: '/mordern/WhatsApp Image 2026-07-09 at 5.39.00 PM (1).jpeg', category: 'Modern' },
-  { id: 38, src: '/mordern/WhatsApp Image 2026-07-09 at 5.39.03 PM (1).jpeg', category: 'Modern' },
-  { id: 39, src: '/mordern/WhatsApp Image 2026-07-09 at 5.39.13 PM (4).jpeg', category: 'Modern' },
-  { id: 18, src: '/leg mehendi/WhatsApp Image 2026-07-09 at 5.38.34 PM.jpeg', category: 'Foot Mehndi' },
-  { id: 19, src: '/leg mehendi/WhatsApp Image 2026-07-09 at 5.38.35 PM.jpeg', category: 'Foot Mehndi' },
-  { id: 20, src: '/leg mehendi/WhatsApp Image 2026-07-09 at 5.38.44 PM.jpeg', category: 'Foot Mehndi' },
-  { id: 21, src: '/leg mehendi/WhatsApp Image 2026-07-09 at 5.38.51 PM (1).jpeg', category: 'Foot Mehndi' },
-  { id: 22, src: '/leg mehendi/WhatsApp Image 2026-07-09 at 5.38.51 PM.jpeg', category: 'Foot Mehndi' },
-  { id: 23, src: '/leg mehendi/WhatsApp Image 2026-07-09 at 5.38.52 PM.jpeg', category: 'Foot Mehndi' },
-  { id: 24, src: '/leg mehendi/WhatsApp Image 2026-07-09 at 5.39.04 PM.jpeg', category: 'Foot Mehndi' },
-  { id: 25, src: '/leg mehendi/WhatsApp Image 2026-07-09 at 5.39.06 PM (1).jpeg', category: 'Foot Mehndi' },
-  { id: 26, src: '/leg mehendi/WhatsApp Image 2026-07-09 at 5.39.11 PM (1).jpeg', category: 'Foot Mehndi' },
-  { id: 27, src: '/leg mehendi/WhatsApp Image 2026-07-09 at 5.39.11 PM (2).jpeg', category: 'Foot Mehndi' },
+  { id: 1, src: '/gallary/WhatsApp Image 2026-09-03 at 5.04.22 PM (1).jpeg', category: 'All Designs' },
+  { id: 2, src: '/gallary/WhatsApp Image 2026-09-03 at 5.04.22 PM (2).jpeg', category: 'All Designs' },
+  { id: 3, src: '/gallary/WhatsApp Image 2026-09-03 at 5.04.23 PM (1).jpeg', category: 'All Designs' }
 ];
 
 // Shuffle images once on load for a mixed "All" view
@@ -67,11 +31,7 @@ export default function Gallery() {
   );
 
   // Ensure the baby design is always the very first image shown
-  filteredImages.sort((a, b) => {
-    if (a.src === '/mordern/WhatsApp Image 2026-07-09 at 5.39.00 PM (1).jpeg') return -1;
-    if (b.src === '/mordern/WhatsApp Image 2026-07-09 at 5.39.00 PM (1).jpeg') return 1;
-    return 0;
-  });
+  // (Removed since image is deleted)
 
   const displayedImages = filteredImages.slice(0, visibleCount);
 
@@ -83,22 +43,7 @@ export default function Gallery() {
           <h2 className="text-gold-500 tracking-[0.4em] uppercase text-xs font-semibold mb-4">Portfolio</h2>
           <p className="text-4xl md:text-5xl font-serif font-bold mb-8 bg-gradient-to-r from-brown-900 via-brown-800 to-brown-900 bg-clip-text text-transparent drop-shadow-sm pb-1">Explore Our Mehndi Designs</p>
           
-          {/* Category Filters */}
-          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-8">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => handleCategoryChange(cat)}
-                className={`text-[11px] sm:text-sm uppercase tracking-widest pb-1 border-b-2 transition-all duration-300 ${
-                  activeCategory === cat 
-                    ? 'border-gold-500 text-gold-600 font-medium' 
-                    : 'border-transparent text-brown-900/60 hover:text-brown-900'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
+          {/* Category Filters removed */}
         </AnimatedSection>
 
         {/* Gallery Grid with Arch Layout */}
