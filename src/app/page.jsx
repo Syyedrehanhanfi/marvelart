@@ -8,6 +8,7 @@ import WhyChooseUs from '../components/WhyChooseUs';
 import Gallery from '../components/Gallery';
 import VideoGallery from '../components/VideoGallery';
 import EventTypes from '../components/EventTypes';
+import ClassesPromo from '../components/ClassesPromo';
 import Pricing from '../components/Pricing';
 import Testimonials from '../components/Testimonials';
 import ServiceAreas from '../components/ServiceAreas';
@@ -43,6 +44,8 @@ export default function Page() {
         <Gallery />
         <VideoGallery />
         <EventTypes />
+        <LuxuryDivider />
+        <ClassesPromo />
         <LuxuryDivider />
         <Pricing />
         <LuxuryDivider />
