@@ -105,55 +105,59 @@ export default function Hero() {
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
             className="relative order-1 lg:order-2 flex justify-center lg:justify-end group/hero-image"
         >
-          {/* Main Arch Image */}
-          <div className="relative w-[85%] sm:w-[70%] lg:w-[85%] aspect-[3/4] max-w-md mt-6 lg:mt-0">
+          {/* Main Image */}
+          <div className="relative w-[90%] sm:w-[80%] lg:w-[100%] aspect-[4/3] max-w-lg mt-6 lg:mt-0">
             {/* Outer Decorative Line */}
-            <div className="absolute -inset-4 border border-gold-500/40 rounded-t-full rounded-b-2xl z-0 transition-transform duration-1000 ease-out group-hover/hero-image:scale-105"></div>
-            <div className="absolute -inset-6 border border-gold-500/20 rounded-t-full rounded-b-[2rem] z-0 transition-transform duration-1000 ease-out delay-75 group-hover/hero-image:scale-[1.07]"></div>
+            <div className="absolute -inset-4 border border-gold-500/40 rounded-2xl z-0 transition-transform duration-1000 ease-out group-hover/hero-image:scale-105"></div>
+            <div className="absolute -inset-6 border border-gold-500/20 rounded-[2rem] z-0 transition-transform duration-1000 ease-out delay-75 group-hover/hero-image:scale-[1.07]"></div>
             
-            <div className="relative w-full h-full rounded-t-full rounded-b-2xl overflow-hidden shadow-2xl z-10 border border-white/50 bg-white">
+            <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl z-10 border border-white/50 bg-white">
               <Image 
-                src="/hero-main.avif" 
+                src="/hero-mains.jpeg" 
                 alt="Beautiful Mehndi Design" 
                 fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                quality={100}
                 className="object-cover transition-transform duration-[2000ms] ease-out group-hover/hero-image:scale-110 group-hover/hero-image:brightness-110"
                 priority
               />
             </div>
 
-            {/* Floating Overlapping Circular Image */}
+            {/* Second Attractive Floating Image */}
             <motion.div 
-              initial={{ opacity: 0, x: -20, rotate: -10 }}
-              animate={{ opacity: 1, x: 0, rotate: 0 }}
-              transition={{ delay: 1.2, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute -bottom-6 -left-6 sm:-left-12 w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-cream-100 shadow-[0_10px_40px_rgba(0,0,0,0.15)] overflow-hidden z-20 transition-transform duration-700 hover:scale-105"
+              initial={{ opacity: 0, y: -20, rotate: -15 }}
+              animate={{ opacity: 1, y: 0, rotate: -6 }}
+              transition={{ delay: 1.4, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+              className="absolute -top-6 -left-2 sm:-top-8 sm:-left-10 w-28 h-36 sm:w-40 sm:h-52 rounded-xl sm:rounded-2xl border-[3px] sm:border-[6px] border-white shadow-[0_15px_35px_rgba(0,0,0,0.2)] overflow-hidden z-30 transition-all duration-700 hover:scale-105 hover:rotate-0 hover:z-40"
             >
               <Image 
-                src="/hero-sub.jpeg" 
-                alt="Mehndi Detail" 
+                src="/hero-main2.jpeg" 
+                alt="Stunning Mehndi Art" 
                 fill
-                sizes="160px"
+                sizes="(max-width: 640px) 250px, 400px"
+                quality={100}
                 className="object-cover bg-white"
               />
             </motion.div>
+
+
             
             {/* Floating Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.8 }}
-              className="absolute top-12 -right-4 sm:-right-8 bg-white p-4 rounded-xl shadow-xl z-20 flex flex-col items-center border border-gold-500/20"
+              className="hidden sm:flex absolute bottom-12 -right-8 bg-white p-4 rounded-xl shadow-xl z-20 flex-col items-center border border-gold-500/20"
             >
-              <span className="text-gold-500 font-serif text-2xl font-bold">5.0</span>
-              <div className="flex gap-1 my-1">
+              <span className="text-gold-500 font-serif text-lg sm:text-2xl font-bold leading-none mb-1 sm:mb-0">5.0</span>
+              <div className="flex gap-0.5 sm:gap-1 my-0.5 sm:my-1">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-3 h-3 fill-gold-500 text-gold-500" viewBox="0 0 24 24">
+                  <svg key={i} className="w-2.5 h-2.5 sm:w-3 sm:h-3 fill-gold-500 text-gold-500" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 ))}
               </div>
-              <span className="text-[9px] uppercase tracking-widest text-brown-900/60 font-semibold">Top Rated</span>
+              <span className="text-[8px] sm:text-[9px] uppercase tracking-widest text-brown-900/60 font-semibold mt-0.5 sm:mt-0">Top Rated</span>
             </motion.div>
 
           </div>
