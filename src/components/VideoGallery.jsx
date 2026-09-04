@@ -5,7 +5,10 @@ import AnimatedSection from './AnimatedSection';
 export default function VideoGallery() {
   const videos = [
     '/videos/WhatsApp Video 2026-09-03 at 5.07.57 PM.mp4',
-    '/videos/WhatsApp Video 2026-09-03 at 5.08.01 PM.mp4'
+    '/videos/WhatsApp Video 2026-09-03 at 5.08.01 PM.mp4',
+    '/videos/WhatsApp Video 2026-09-04 at 5.06.17 PM.mp4',
+    '/videos/WhatsApp Video 2026-09-04 at 5.06.18 PM.mp4',
+    '/videos/WhatsApp Video 2026-09-04 at 5.06.21 PM.mp4'
   ];
 
   return (
@@ -19,7 +22,7 @@ export default function VideoGallery() {
           <p className="text-3xl sm:text-4xl md:text-5xl font-serif text-cream-100">Cinematic Showcase</p>
         </AnimatedSection>
         
-        <AnimatedSection className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 justify-center">
+        <AnimatedSection className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 justify-center">
           {videos.map((src, index) => (
             <div key={index} className="w-full max-w-[320px] sm:max-w-[400px] bg-white/5 backdrop-blur-md rounded-[2.5rem] p-3 relative shadow-[0_0_40px_rgba(212,175,55,0.15)] border border-gold-500/20 group mx-auto">
               <div className="absolute top-0 left-0 w-12 h-12 border-t border-l border-gold-500/50 rounded-tl-[2.5rem] m-1 pointer-events-none z-10 transition-transform duration-700 group-hover:scale-110"></div>
