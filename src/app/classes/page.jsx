@@ -75,9 +75,9 @@ const aboutFeatures = [
 ];
 
 const studentGallery = [
-  { src: '/img/WhatsApp Image 2026-09-04 at 5.06.15 PM.jpeg', category: 'Mehndi Art' },
-  { src: '/img/WhatsApp Image 2026-09-04 at 5.06.16 PM.jpeg', category: 'Mehndi Art' },
-  { src: '/img/WhatsApp Image 2026-09-04 at 5.06.22 PM (1).jpeg', category: 'Mehndi Art' }
+  { src: '/img/img1.jpeg', category: 'Mehndi Art' },
+  { src: '/img/img4 (1).jpeg', category: 'Mehndi Art' },
+  { src: '/img/img4 (2).jpeg', category: 'Mehndi Art' }
 ];
 
 const stats = [
