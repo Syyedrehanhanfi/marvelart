@@ -14,9 +14,6 @@ const images = [
   { id: 4, src: '/img/img4 (3).jpeg', category: 'All Designs' }
 ];
 
-// Shuffle images once on load for a mixed "All" view
-const shuffledImages = [...images].sort(() => Math.random() - 0.5);
-
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState('All Designs');
   const [visibleCount, setVisibleCount] = useState(6);
@@ -27,7 +24,7 @@ export default function Gallery() {
     setVisibleCount(6);
   };
 
-  const filteredImages = shuffledImages.filter(
+  const filteredImages = images.filter(
     img => activeCategory === 'All Designs' || img.category === activeCategory
   );
 
