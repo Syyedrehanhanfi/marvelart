@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from 'react';
-import { motion, AnimatePresence, useInView, useMotionValue, useTransform, animate } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Check, Star, Users, Award, BookOpen, Clock, Gift, Shield, Crown, Sparkles, TrendingUp, Briefcase, HeartHandshake, ArrowRight, CheckCircle2, Phone } from 'lucide-react';
 import Image from 'next/image';
 import Navbar from '../../components/Navbar';
@@ -98,22 +98,31 @@ const faqs = [
 
 function AnimatedCounter({ value, suffix = "" }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
-  const motionVal = useMotionValue(0);
-  const rounded = useTransform(motionVal, (v) => Math.round(v));
   const [display, setDisplay] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
-    if (isInView) {
-      const controls = animate(motionVal, value, { duration: 2, ease: "easeOut" });
-      return controls.stop;
-    }
-  }, [isInView, motionVal, value]);
-
-  useEffect(() => {
-    const unsubscribe = rounded.on("change", (v) => setDisplay(v));
-    return unsubscribe;
-  }, [rounded]);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+          const duration = 2000;
+          const startTime = performance.now();
+          const step = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            setDisplay(Math.round(eased * value));
+            if (progress < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+        }
+      },
+      { threshold: 0.3 }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [value, hasAnimated]);
 
   return (
     <span ref={ref} className="tabular-nums">
@@ -234,7 +243,7 @@ export default function ClassesPage() {
 
                     <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border border-white/50 bg-white z-10">
                       <Image
-                        src="/hero-mains.jpeg"
+                        src="/class-hero.jpg"
                         alt="Professional Mehndi Art by Mehndi Marvel Academy"
                         fill
                         sizes="(max-width: 768px) 80vw, (max-width: 1200px) 40vw, 30vw"
