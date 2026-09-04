@@ -8,9 +8,10 @@ import AnimatedSection from './AnimatedSection';
 const categories = ['All Designs', 'Bridal', 'Arabic', 'Modern', 'Foot Mehndi'];
 
 const images = [
-  { id: 1, src: '/gallary/WhatsApp Image 2026-09-03 at 5.04.22 PM (1).jpeg', category: 'All Designs' },
-  { id: 2, src: '/gallary/WhatsApp Image 2026-09-03 at 5.04.22 PM (2).jpeg', category: 'All Designs' },
-  { id: 3, src: '/gallary/WhatsApp Image 2026-09-03 at 5.04.23 PM (1).jpeg', category: 'All Designs' }
+  { id: 1, src: '/img/WhatsApp Image 2026-09-04 at 5.06.15 PM.jpeg', category: 'All Designs' },
+  { id: 2, src: '/img/WhatsApp Image 2026-09-04 at 5.06.16 PM.jpeg', category: 'All Designs' },
+  { id: 3, src: '/img/WhatsApp Image 2026-09-04 at 5.06.22 PM (1).jpeg', category: 'All Designs' },
+  { id: 4, src: '/img/WhatsApp Image 2026-09-04 at 5.06.22 PM.jpeg', category: 'All Designs' }
 ];
 
 // Shuffle images once on load for a mixed "All" view
