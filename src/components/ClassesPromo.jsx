@@ -33,6 +33,10 @@ export default function ClassesPromo() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
+              <p className="text-lg text-brown-900 font-light mb-4 max-w-xl text-balance leading-relaxed">
+                <strong className="text-xl font-serif text-gold-600 block mb-2">Mehndi Marvel by Monika Sharma ✨</strong>
+                Professional Bridal & Occasion Mehndi Artist with 10+ years of experience. We also offer Mehndi Classes for beginners & professionals. Quality work, unique designs, and premium service. Book your appointment today! 💚
+              </p>
               <p className="text-lg text-brown-900/80 font-light mb-8 max-w-xl text-balance leading-relaxed">
                 Turn your passion into a high-paying profession. Join our certified 6-week professional course in Udaipur and learn everything from basic elements to intricate bridal portraits.
               </p>
