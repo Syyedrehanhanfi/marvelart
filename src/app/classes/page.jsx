@@ -200,7 +200,7 @@ export default function ClassesPage() {
 
                 <AnimatedSection delay={0.3} className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mb-8">
                   <a
-                    href="https://wa.me/8209719892?text=Hi%2C%20I%20am%20interested%20in%20enrolling%20in%20the%20Professional%20Mehndi%20Class."
+                    href="https://wa.me/918209719892?text=Hi%2C%20I%20am%20interested%20in%20enrolling%20in%20the%20Professional%20Mehndi%20Class."
                     target="_blank"
                     rel="noreferrer"
                     className="relative group px-8 sm:px-10 py-4 sm:py-5 bg-brown-900 text-gold-500 text-sm font-bold tracking-widest uppercase rounded-full hover:text-white transition-all duration-500 shadow-[0_10px_30px_rgba(86,60,45,0.2)] hover:shadow-[0_10px_40px_rgba(212,175,55,0.4)] overflow-hidden text-center"
@@ -527,7 +527,7 @@ export default function ClassesPage() {
                       </ul>
 
                       <a
-                        href="https://wa.me/8209719892?text=Hi%2C%20I%20want%20to%20enroll%20in%20the%20Professional%20Mehndi%20Class%20at%20the%20special%20offer%20price%20of%204999."
+                        href="https://wa.me/918209719892?text=Hi%2C%20I%20want%20to%20enroll%20in%20the%20Professional%20Mehndi%20Class%20at%20the%20special%20offer%20price%20of%204999."
                         target="_blank"
                         rel="noreferrer"
                         className="block w-full py-4 sm:py-5 bg-gradient-to-r from-gold-600 to-gold-400 text-brown-900 text-sm font-bold tracking-widest uppercase rounded-full hover:shadow-[0_0_40px_rgba(212,175,55,0.6)] transition-all duration-300 hover:scale-[1.03] text-center relative overflow-hidden"
@@ -684,7 +684,7 @@ export default function ClassesPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
                   <a
-                    href="https://wa.me/8209719892?text=Hi%2C%20I%20want%20to%20enroll%20in%20the%20Professional%20Mehndi%20Class."
+                    href="https://wa.me/918209719892?text=Hi%2C%20I%20want%20to%20enroll%20in%20the%20Professional%20Mehndi%20Class."
                     target="_blank"
                     rel="noreferrer"
                     className="w-full sm:w-auto px-10 sm:px-12 py-4 sm:py-5 bg-brown-900 text-gold-500 text-sm font-bold tracking-widest uppercase rounded-full hover:bg-gold-600 hover:text-brown-900 transition-all duration-300 shadow-[0_10px_30px_rgba(86,60,45,0.2)] hover:-translate-y-1"
@@ -692,7 +692,7 @@ export default function ClassesPage() {
                     Enroll Now
                   </a>
                   <a
-                    href="https://wa.me/8209719892?text=Hi%2C%20I%20have%20a%20question%20about%20the%20Mehndi%20classes."
+                    href="https://wa.me/918209719892?text=Hi%2C%20I%20have%20a%20question%20about%20the%20Mehndi%20classes."
                     target="_blank"
                     rel="noreferrer"
                     className="w-full sm:w-auto px-10 sm:px-12 py-4 sm:py-5 bg-white border border-brown-900/20 text-brown-900 text-sm font-bold tracking-widest uppercase rounded-full hover:bg-cream-100 transition-all duration-300"

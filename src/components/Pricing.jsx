@@ -59,7 +59,7 @@ export default function Pricing() {
 
             <div className="text-center relative z-10 mt-2">
               <a 
-                href="https://wa.me/8209719892?text=Hi,%20I%20would%20like%20to%20inquire%20about%20the%20Luxury%20Bridal%20Mehndi%20Package" 
+                href="https://wa.me/918209719892?text=Hi,%20I%20would%20like%20to%20inquire%20about%20the%20Luxury%20Bridal%20Mehndi%20Package" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="inline-flex w-full justify-center items-center gap-2 px-6 py-4 bg-gradient-to-r from-gold-600 via-gold-500 to-gold-600 text-brown-900 uppercase tracking-[0.2em] text-[11px] font-bold rounded-xl hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all duration-500 hover:-translate-y-0.5"

@@ -60,7 +60,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto"
           >
             <a
-              href="https://wa.me/8209719892?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Mehndi%20appointment"
+              href="https://wa.me/918209719892?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Mehndi%20appointment"
               target="_blank"
               rel="noreferrer"
               className="group relative w-full sm:w-auto px-10 py-4 bg-brown-900 text-cream-100 uppercase tracking-widest text-sm font-semibold overflow-hidden shadow-[0_0_20px_rgba(176,139,91,0.2)] transition-all duration-700 hover:shadow-[0_0_30px_rgba(176,139,91,0.4)] hover:-translate-y-1 text-center border border-brown-900"

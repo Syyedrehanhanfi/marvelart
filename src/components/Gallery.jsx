@@ -140,7 +140,7 @@ export default function Gallery() {
               </button>
 
               <a 
-                href={`https://wa.me/8209719892?text=Hi%2C%20I%20love%20the%20${selectedImage.category}%20Mehndi%20design%20from%20your%20portfolio.%20I%20would%20like%20to%20book%20an%20appointment.`}
+                href={`https://wa.me/918209719892?text=Hi%2C%20I%20love%20the%20${selectedImage.category}%20Mehndi%20design%20from%20your%20portfolio.%20I%20would%20like%20to%20book%20an%20appointment.`}
                 target="_blank"
                 rel="noreferrer"
                 className="group relative overflow-hidden flex-1 bg-[#25D366] text-white rounded-full py-4 px-6 flex items-center justify-center gap-3 shadow-[0_10px_30px_rgba(37,211,102,0.3)] hover:shadow-[0_10px_40px_rgba(37,211,102,0.5)] hover:-translate-y-1 transition-all duration-300 border border-[#25D366]/50"

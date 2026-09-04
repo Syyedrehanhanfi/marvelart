@@ -27,7 +27,7 @@ export default function Contact() {
                   <a href="tel:8209719892" className="text-2xl font-serif text-gold-600 hover:text-gold-500 transition-colors block mb-2">
                     8209719892
                   </a>
-                  <a href="https://wa.me/8209719892?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Mehndi%20appointment" target="_blank" rel="noreferrer" className="inline-block text-xs uppercase tracking-widest text-brown-900 border-b border-brown-900 pb-1">
+                  <a href="https://wa.me/918209719892?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Mehndi%20appointment" target="_blank" rel="noreferrer" className="inline-block text-xs uppercase tracking-widest text-brown-900 border-b border-brown-900 pb-1">
                     Message on WhatsApp
                   </a>
                 </div>
@@ -65,7 +65,7 @@ export default function Contact() {
               For immediate bookings, pricing inquiries, or custom design consultations, please reach out to us directly on WhatsApp.
             </p>
             <a 
-              href="https://wa.me/8209719892?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Mehndi%20appointment" 
+              href="https://wa.me/918209719892?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Mehndi%20appointment" 
               target="_blank" 
               rel="noreferrer" 
               className="relative overflow-hidden w-full py-4 bg-brown-900 text-cream-100 uppercase tracking-widest text-sm font-semibold hover:shadow-[0_0_20px_rgba(176,139,91,0.2)] transition-all duration-700 hover:-translate-y-0.5 flex items-center justify-center gap-3 group/btn z-10 border border-brown-900"
