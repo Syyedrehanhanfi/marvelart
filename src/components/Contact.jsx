@@ -24,8 +24,8 @@ export default function Contact() {
                 <div>
                   <h3 className="text-xl font-serif text-brown-900 mb-2">Call or WhatsApp</h3>
                   <p className="text-brown-900/70 font-light mb-4">We are available 24/7 for bookings and inquiries.</p>
-                  <a href="tel:+918209719892" className="text-2xl font-serif text-gold-600 hover:text-gold-500 transition-colors block mb-2">
-                    +91 8209719892
+                  <a href="tel:8209719892" className="text-2xl font-serif text-gold-600 hover:text-gold-500 transition-colors block mb-2">
+                    8209719892
                   </a>
                   <a href="https://wa.me/8209719892?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Mehndi%20appointment" target="_blank" rel="noreferrer" className="inline-block text-xs uppercase tracking-widest text-brown-900 border-b border-brown-900 pb-1">
                     Message on WhatsApp

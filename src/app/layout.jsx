@@ -62,7 +62,7 @@ const localBusinessLd = {
   image: `${WEBSITE_URL}/logo/logo.jpg`,
   '@id': WEBSITE_URL,
   url: WEBSITE_URL,
-  telephone: '+918209719892',
+  telephone: '8209719892',
   email: 'mehndimarvelofficial@gmail.com',
   address: {
     '@type': 'PostalAddress',
@@ -89,7 +89,7 @@ const organizationLd = {
   logo: `${WEBSITE_URL}/logo/logo.jpg`,
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+918209719892',
+    telephone: '8209719892',
     contactType: 'customer service',
     email: 'mehndimarvelofficial@gmail.com'
   },
